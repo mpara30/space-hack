@@ -1,21 +1,17 @@
 package app;
 
 import data.Contact;
+import database.dbConnect;
 import javax.swing.JOptionPane;
 
 /* @author param */
 public class Login extends javax.swing.JFrame {
 
     private Contact c = null;
-    
-    
-    
 
     public Login() {
         initComponents();
-        
-        
-        
+
     }
 
     @SuppressWarnings("unchecked")
@@ -144,7 +140,7 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtNumeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeActionPerformed
-        
+
     }//GEN-LAST:event_txtNumeActionPerformed
 
     private void btAcceptareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAcceptareActionPerformed
@@ -159,12 +155,8 @@ public class Login extends javax.swing.JFrame {
         StartMeniu();
         //new Meniu().setVisible(true);
         this.dispose();
-        
-        
-        
-        
-        
-        
+
+
     }//GEN-LAST:event_btAcceptareActionPerformed
 
     private void btAnulareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAnulareActionPerformed
@@ -179,13 +171,13 @@ public class Login extends javax.swing.JFrame {
     private void txtPrenumeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrenumeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPrenumeActionPerformed
-    
-    private void StartMeniu(){
+
+    private void StartMeniu() {
         Meniu m = new Meniu(c);
         m.setVisible(true);
-    
-}
-    
+
+    }
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -215,6 +207,8 @@ public class Login extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Login().setVisible(true);
+                dbConnect con = new dbConnect();
+                con.Connection();
             }
         });
     }
