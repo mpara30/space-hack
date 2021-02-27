@@ -1,12 +1,13 @@
 package app;
 
+import java.awt.CardLayout;
+import javax.swing.JPanel;
+
 /* @author Iulian */
 public class Meniu extends javax.swing.JFrame {
     
     private static data.Contact c = null;
     
-    
-
     public Meniu(data.Contact c) {
         initComponents();
         lbMesaj.setText("Bun venit " + Mesaj(c));
@@ -21,7 +22,7 @@ public class Meniu extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btBanci = new javax.swing.JButton();
         lbMesaj = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -42,7 +43,12 @@ public class Meniu extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Oferte Banci");
+        btBanci.setText("Oferte Banci");
+        btBanci.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btBanciActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -53,7 +59,7 @@ public class Meniu extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btBanci, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbMesaj, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -70,7 +76,7 @@ public class Meniu extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jButton2)
                 .addGap(18, 18, 18)
-                .addComponent(jButton3)
+                .addComponent(btBanci)
                 .addContainerGap(62, Short.MAX_VALUE))
         );
 
@@ -84,6 +90,10 @@ public class Meniu extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void btBanciActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btBanciActionPerformed
+        new Banca().setVisible(true);
+    }//GEN-LAST:event_btBanciActionPerformed
     
     private String Mesaj(data.Contact c){
         String g = c.toString();
@@ -93,12 +103,13 @@ public class Meniu extends javax.swing.JFrame {
         return pren;
     }
     
+    
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btBanci;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lbMesaj;
     // End of variables declaration//GEN-END:variables

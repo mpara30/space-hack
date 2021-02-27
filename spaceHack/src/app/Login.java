@@ -148,7 +148,7 @@ public class Login extends javax.swing.JFrame {
         c = new Contact(txtNume.getText(), txtPrenume.getText(), txtCNP.getText(), txtTelefon.getText(), txtEmail.getText());
         //mesaj confirmare:
         JOptionPane.showMessageDialog(this, "Inregistrare efectuata");
-        JOptionPane.showMessageDialog(this, c.toString());
+        //JOptionPane.showMessageDialog(this, c.toString());
         //inchide login:
         //this.dispose();
         //deschide meniu:
