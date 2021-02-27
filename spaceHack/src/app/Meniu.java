@@ -11,8 +11,6 @@ public class Meniu extends javax.swing.JFrame {
     public Meniu(data.Contact c) {
         initComponents();
         lbMesaj.setText("Bun venit " + Mesaj(c));
-        
-        
     }
 
     @SuppressWarnings("unchecked")

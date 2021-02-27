@@ -1,8 +1,11 @@
 package app;
 
+
+
 /* @author Iulian */
 public class Pasi extends javax.swing.JFrame {
-
+    
+    
     public Pasi() {
         initComponents();
     }
@@ -455,35 +458,35 @@ public class Pasi extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cbPas2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbPas2ActionPerformed
-        // TODO add your handling code here:
+        progPasi.setValue(24);
     }//GEN-LAST:event_cbPas2ActionPerformed
 
     private void cbPas3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbPas3ActionPerformed
-        // TODO add your handling code here:
+        progPasi.setValue(36);
     }//GEN-LAST:event_cbPas3ActionPerformed
 
     private void cbPas4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbPas4ActionPerformed
-        // TODO add your handling code here:
+        progPasi.setValue(48);
     }//GEN-LAST:event_cbPas4ActionPerformed
 
     private void cbPas5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbPas5ActionPerformed
-        // TODO add your handling code here:
+        progPasi.setValue(60);
     }//GEN-LAST:event_cbPas5ActionPerformed
 
     private void cbPas6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbPas6ActionPerformed
-        // TODO add your handling code here:
+        progPasi.setValue(72);
     }//GEN-LAST:event_cbPas6ActionPerformed
 
     private void cbPas7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbPas7ActionPerformed
-        // TODO add your handling code here:
+        progPasi.setValue(84);
     }//GEN-LAST:event_cbPas7ActionPerformed
 
     private void cbPas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbPas1ActionPerformed
-        // TODO add your handling code here:
+        progPasi.setValue(12);
     }//GEN-LAST:event_cbPas1ActionPerformed
 
     private void cbPas8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbPas8ActionPerformed
-        // TODO add your handling code here:
+        progPasi.setValue(100);
     }//GEN-LAST:event_cbPas8ActionPerformed
 
     
