@@ -19,11 +19,12 @@ public class Meniu extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         btPasi = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jbEvidenta = new javax.swing.JButton();
         btBanci = new javax.swing.JButton();
         lbMesaj = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Meniul principal");
 
         jLabel1.setText("MENIU");
 
@@ -34,10 +35,10 @@ public class Meniu extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("Evidenta Acte");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jbEvidenta.setText("Evidenta Acte");
+        jbEvidenta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jbEvidentaActionPerformed(evt);
             }
         });
 
@@ -56,7 +57,7 @@ public class Meniu extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(btPasi, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2)
+                    .addComponent(jbEvidenta)
                     .addComponent(btBanci, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbMesaj, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
@@ -72,7 +73,7 @@ public class Meniu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btPasi)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(jbEvidenta)
                 .addGap(18, 18, 18)
                 .addComponent(btBanci)
                 .addContainerGap(62, Short.MAX_VALUE))
@@ -85,9 +86,10 @@ public class Meniu extends javax.swing.JFrame {
         new Pasi().setVisible(true);
     }//GEN-LAST:event_btPasiActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jbEvidentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbEvidentaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+        new jfDocumente().setVisible(true);
+    }//GEN-LAST:event_jbEvidentaActionPerformed
 
     private void btBanciActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btBanciActionPerformed
         new Banca().setVisible(true);
@@ -107,8 +109,8 @@ public class Meniu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btBanci;
     private javax.swing.JButton btPasi;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jbEvidenta;
     private javax.swing.JLabel lbMesaj;
     // End of variables declaration//GEN-END:variables
 }
