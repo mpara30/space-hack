@@ -1,7 +1,11 @@
 package app;
 
 import java.awt.CardLayout;
+import java.awt.event.ActionEvent;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import javax.swing.JPanel;
+import javax.swing.Timer;
 
 /* @author Iulian */
 public class Meniu extends javax.swing.JFrame {
@@ -11,8 +15,8 @@ public class Meniu extends javax.swing.JFrame {
     public Meniu(data.Contact c) {
         initComponents();
         lbMesaj.setText("Bun venit " + Mesaj(c));
-        
-        
+        showDate();
+        showTime();
     }
 
     @SuppressWarnings("unchecked")
@@ -24,6 +28,8 @@ public class Meniu extends javax.swing.JFrame {
         jDocumente = new javax.swing.JButton();
         btBanci = new javax.swing.JButton();
         lbMesaj = new javax.swing.JLabel();
+        jlTime = new javax.swing.JLabel();
+        jlDate = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,19 +56,29 @@ public class Meniu extends javax.swing.JFrame {
             }
         });
 
+        jlTime.setText("jLabel2");
+
+        jlDate.setText("jLabel3");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(93, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jDocumente)
                     .addComponent(btBanci, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbMesaj, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(94, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jlTime, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jlDate, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -77,7 +93,11 @@ public class Meniu extends javax.swing.JFrame {
                 .addComponent(jDocumente)
                 .addGap(18, 18, 18)
                 .addComponent(btBanci)
-                .addContainerGap(62, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
+                .addComponent(jlTime)
+                .addGap(5, 5, 5)
+                .addComponent(jlDate)
+                .addContainerGap())
         );
 
         pack();
@@ -105,6 +125,20 @@ public class Meniu extends javax.swing.JFrame {
         return pren;
     }
     
+    void showDate() {
+        Date d = new Date();
+        SimpleDateFormat s = new SimpleDateFormat("dd-MM-yyyy");
+        jlDate.setText(s.format(d));
+    }
+
+    void showTime() {
+        new Timer(0, (ActionEvent e) -> {
+            Date d = new Date();
+            SimpleDateFormat s = new SimpleDateFormat("hh:mm:ss a");
+            jlTime.setText(s.format(d));
+        }).start();
+    }
+    
     
 
 
@@ -113,6 +147,8 @@ public class Meniu extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jDocumente;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jlDate;
+    private javax.swing.JLabel jlTime;
     private javax.swing.JLabel lbMesaj;
     // End of variables declaration//GEN-END:variables
 }

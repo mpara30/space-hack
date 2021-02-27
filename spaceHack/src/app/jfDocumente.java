@@ -85,7 +85,7 @@ public class jfDocumente extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("Nume:");
 
-        jbIncarcare.setText("...");
+        jbIncarcare.setText("Incarca acum");
         jbIncarcare.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbIncarcareActionPerformed(evt);
@@ -137,9 +137,9 @@ public class jfDocumente extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jNumeDocument, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -231,28 +231,18 @@ public class jfDocumente extends javax.swing.JFrame {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
+            
             String sql = "INSERT INTO files "
                     + "(numeDocument,numeFisier) "
                     + "VALUES ('" + jNumeDocument.getText() + "','"
                     + fileName + "')";
             s.execute(sql);
 
+            lblFile.setText("");
+            jNumeDocument.setText("");
+            
             JOptionPane.showMessageDialog(null, "Adaugare reusita!");
 
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-
-        String updateSQL = "UPDATE files "
-                + "SET pdf_file = ?";
-
-        try {
-            PreparedStatement pst = con.Connection().prepareStatement(updateSQL);
-            File fisierSelectat = jFileChooser1.getSelectedFile();
-            FileInputStream input = new FileInputStream(fisierSelectat);
-            pst.setBinaryStream(1, input);
-            pst.executeUpdate();
         } catch (Exception e) {
             System.out.println(e);
         }
