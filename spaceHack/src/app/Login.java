@@ -1,12 +1,12 @@
 package app;
 
 import data.Contact;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 /* @author param */
 public class Login extends javax.swing.JFrame {
 
+    private Contact c = null;
     
     
     
@@ -149,18 +149,16 @@ public class Login extends javax.swing.JFrame {
 
     private void btAcceptareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAcceptareActionPerformed
         //cod:
-        txtNume.getText();
-        txtPrenume.getText();
-        txtCNP.getText();
-        txtTelefon.getText();
-        txtEmail.getText();
+        c = new Contact(txtNume.getText(), txtPrenume.getText(), txtCNP.getText(), txtTelefon.getText(), txtEmail.getText());
         //mesaj confirmare:
         JOptionPane.showMessageDialog(this, "Inregistrare efectuata");
+        JOptionPane.showMessageDialog(this, c.toString());
         //inchide login:
-        this.dispose();
+        //this.dispose();
         //deschide meniu:
-        new Meniu().setVisible(true);
-        
+        StartMeniu();
+        //new Meniu().setVisible(true);
+        this.dispose();
         
         
         
@@ -181,7 +179,13 @@ public class Login extends javax.swing.JFrame {
     private void txtPrenumeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrenumeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPrenumeActionPerformed
-
+    
+    private void StartMeniu(){
+        Meniu m = new Meniu(c);
+        m.setVisible(true);
+    
+}
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

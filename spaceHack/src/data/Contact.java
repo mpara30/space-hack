@@ -9,7 +9,7 @@ public class Contact implements Serializable {
     private String email;
     private String cnp;
 
-    public Contact(String nume, String prenume, String telefon, String email, String cnp) {
+    public Contact(String nume, String prenume, String cnp, String telefon, String email) {
         this.nume = nume;
         this.prenume = prenume;
         this.telefon = telefon;
@@ -17,11 +17,11 @@ public class Contact implements Serializable {
         this.cnp = cnp;
     }
 
-    public static Contact getInstance(String nume, String prenume, String telefon, String email, String cnp){
+    public static Contact getInstance(String nume, String prenume, String cnp, String telefon, String email){
         if(nume.isEmpty() || prenume.isEmpty() || telefon.isEmpty() || email.isEmpty() || cnp.isEmpty()){
             return null;
         }
-        return new Contact(nume, prenume, telefon, email, cnp);
+        return new Contact(nume, prenume, cnp, telefon, email);
     }
 
     public String getNume() {
@@ -69,9 +69,9 @@ public class Contact implements Serializable {
         return "Contact{" +
                 "nume='" + nume + '\'' +
                 ", prenume='" + prenume + '\'' +
+                ", cnp='" + cnp + '\'' +
                 ", telefon='" + telefon + '\'' +
                 ", email='" + email + '\'' +
-                ", cnp='" + cnp + '\'' +
                 '}';
     }
 }
