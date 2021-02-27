@@ -5,6 +5,15 @@
  */
 package app;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Properties;
+import java.util.prefs.Preferences;
+
 /**
  *
  * @author param
@@ -16,6 +25,7 @@ public class jfActeNecesare extends javax.swing.JFrame {
      */
     public jfActeNecesare() {
         initComponents();
+
     }
 
     /**
@@ -45,9 +55,13 @@ public class jfActeNecesare extends javax.swing.JFrame {
         jCheckBox13 = new javax.swing.JCheckBox();
         jButton1 = new javax.swing.JButton();
 
+        setTitle("Acte necesare infintarii firmei");
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 formWindowClosing(evt);
+            }
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
             }
         });
 
@@ -226,6 +240,10 @@ public class jfActeNecesare extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+    }//GEN-LAST:event_formWindowOpened
+
     /**
      * @param args the command line arguments
      */
@@ -260,6 +278,7 @@ public class jfActeNecesare extends javax.swing.JFrame {
             }
         });
     }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

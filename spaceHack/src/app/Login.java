@@ -33,6 +33,7 @@ public class Login extends javax.swing.JFrame {
         btAnulare = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Inregistrare");
 
         jLabel1.setText("INREGISTRARE PERSOANA");
 
