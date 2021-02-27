@@ -35,7 +35,7 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Inregistrare");
 
-        jLabel1.setText("INREGISTRARE PERSOANA");
+        jLabel1.setText("INREGISTRARE");
 
         jLabel2.setText("Nume:");
 
@@ -101,7 +101,7 @@ public class Login extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(53, 53, 53)
                 .addComponent(btAcceptare)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
                 .addComponent(btAnulare)
                 .addGap(54, 54, 54))
         );
@@ -134,7 +134,7 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btAnulare)
                     .addComponent(btAcceptare))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
 
         pack();
@@ -150,11 +150,15 @@ public class Login extends javax.swing.JFrame {
         //mesaj confirmare:
         JOptionPane.showMessageDialog(this, "Inregistrare efectuata");
         //JOptionPane.showMessageDialog(this, c.toString());
+<<<<<<< Updated upstream
         //inchide login:
+=======
+>>>>>>> Stashed changes
         //this.dispose();
         //deschide meniu:
         StartMeniu();
         //new Meniu().setVisible(true);
+        //inchide login:
         this.dispose();
 
 
