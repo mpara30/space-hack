@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="progPasi" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Component id="jTabbedPane1" alignment="0" pref="503" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jTabbedPane1" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="progPasi" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel8" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Pasul 1">
+                <Property name="tabTitle" type="java.lang.String" value="Pasul 1"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="cbPas1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="254" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane7" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jScrollPane7" pref="149" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Component id="cbPas1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel7">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pasul 1: Alcatuirea dosarului firmei"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbPas1">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbPas1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane7">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea7">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Times New Roman" size="14" style="0"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="     Primul lucru de care este nevoie pentru a infiinta o firma este cunoasterea&#xa; si completarea actelor necesare dosarului. Solicitarea actelor se poate face ori&#xa;la Registrul Cometrului din orasul tau ori pot fii descarcate de pe link-ul urmator:&#xa;&#xa;https://www.onrc.ro/index.php/ro/inmatriculari/persoane-juridice/nume-colectiv/"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Pasul 2">
+                <Property name="tabTitle" type="java.lang.String" value="Pasul 2"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="cbPas2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" pref="478" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" pref="149" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="cbPas2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pasul 2: Rezervarea numelui firmei"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbPas2">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbPas2ActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea1">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Times New Roman" size="14" style="0"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="     Dupa completarea dosarului, urmatorul pas este rezervarea numelui firmei.&#xa;Cererea aferenta rezervarii trebuie completata cu mai multe variante de denumiri.&#xa;Este recomandat sa fie pregatite cel putin 3 variante. Dupa aceea este necesara&#xa;prezenta la un birou de rezervari de denumiri.&#xa;     Durata de astptare este, in general, de aproximativ 2-3zile."/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel3">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Pasul 3">
+                <Property name="tabTitle" type="java.lang.String" value="Pasul 3"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="cbPas3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="266" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane2" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jScrollPane2" pref="149" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="cbPas3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pasul 3: Stabilirea sediului social"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbPas3">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbPas3ActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea2">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Times New Roman" size="14" style="0"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="     Firma are nevoie de o locatie unde urmeaza sa isi desfasoare activitatea. Sediul&#xa;social poate fi o proprietate detinuta sau inchiriata. Pentru trecerea sediului pe &#xa;numele firmei este nevoie de un contract realizat intre detinatorul proprietatii si &#xa;firma.&#xa;     Documentele necesare pot fii regasite la pasul 1."/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel4">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Pasul 4">
+                <Property name="tabTitle" type="java.lang.String" value="Pasul 4"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="cbPas4" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="306" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane3" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jScrollPane3" pref="149" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="cbPas4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pasul 4: Capitalul Social"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbPas4">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbPas4ActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea3">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Times New Roman" size="14" style="0"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="     Capitalul social trebuie sa fie minim de 200 lei, divizat in parti sociale cu &#xa;valoarea de cel putin 10 lei fiecare. Capitalul este depus de catra asociatii firmei, &#xa;de preferat, la o banca la care urmeaza sa fie deschis contul curent al firmei.&#xa;     Dupa depunere, va fii inmanata o chitanta doveditoare."/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel5">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Pasul 5">
+                <Property name="tabTitle" type="java.lang.String" value="Pasul 5"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="cbPas5" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="280" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane4" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jScrollPane4" pref="149" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="cbPas5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pasul 5: Taxa de inregistrare"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbPas5">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbPas5ActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea4">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Times New Roman" size="14" style="0"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="     Dupa completarea dosarului cu toate actele necesare, acesta trebuie inmanat &#xa;la ghiseul de depunere. Dupa verificare, trebuie platita taxa de inregistrare si tariful&#xa;de publicare la Monitorul Oficial.&#xa;     Costul pentru inregistrarea unui SRL este de 122 lei. Se mai pot adauga 100 lei&#xa; taxa de notar pentru declaratii si semnatura."/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel6">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Pasul 6">
+                <Property name="tabTitle" type="java.lang.String" value="Pasul 6"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="cbPas6" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="291" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane5" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jScrollPane5" pref="149" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="cbPas6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pasul 6: Realizare stampila"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbPas6">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbPas6ActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea5">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Times New Roman" size="14" style="0"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="     Dupa obtinerea actelor de inregistrare a firmei, sunt necesare indeplinirea &#xa;unor activitati. Prima fiind realizarea unei stampile.&#xa;     Costul este aproximativ 100 lei, in functie de numarul stampilelor si de calitatea &#xa;acestora."/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel7">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Pasul 7">
+                <Property name="tabTitle" type="java.lang.String" value="Pasul 7"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="cbPas7" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="266" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane6" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jScrollPane6" pref="149" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="cbPas7" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel6">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pasul 7: Deschidere cont curent"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbPas7">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbPas7ActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane6">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea6">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Times New Roman" size="14" style="0"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="     Urmatorul pas este deschiderea unui cont curent pentru firma la o banca. In &#xa;cadrul meniului este prezenta o functie numita &quot;Oferte Banci&quot;, care are ca scop &#xa;prezentarea diferitelor oferte ale unor banci cunoscute, cat si punerea in contact &#xa;cu acestea."/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel8">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Pasul 8">
+                <Property name="tabTitle" type="java.lang.String" value="Pasul 8"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="cbPas8" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                              <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="242" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane8" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jScrollPane8" pref="149" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="cbPas8" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel9">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pasul 8: Modele de facturi si chitante"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbPas8">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbPas8ActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane8">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea8">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Times New Roman" size="14" style="0"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="     Ultimul pas necesar pentru realizarea unei firme este crearea modului in care &#xa;urmeaza sa fie facturati viitorii clienti.&#xa;     Modelele pot fii realizate manual sau cu ajutorul unor aplicatii deja create in &#xa;acest scop. Exemple de aceste aplicatii sunt: smartbill.com si easybill.ro"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JProgressBar" name="progPasi">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Progres:"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
