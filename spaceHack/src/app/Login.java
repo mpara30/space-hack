@@ -150,10 +150,7 @@ public class Login extends javax.swing.JFrame {
         //mesaj confirmare:
         JOptionPane.showMessageDialog(this, "Inregistrare efectuata");
         //JOptionPane.showMessageDialog(this, c.toString());
-<<<<<<< Updated upstream
-        //inchide login:
-=======
->>>>>>> Stashed changes
+
         //this.dispose();
         //deschide meniu:
         StartMeniu();

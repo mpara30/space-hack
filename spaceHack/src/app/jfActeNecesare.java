@@ -5,19 +5,10 @@
  */
 package app;
 
+import download.Download;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Properties;
-import java.util.prefs.Preferences;
 
-/**
- *
- * @author param
- */
+
 public class jfActeNecesare extends javax.swing.JFrame {
 
     /**
@@ -54,6 +45,14 @@ public class jfActeNecesare extends javax.swing.JFrame {
         jCheckBox12 = new javax.swing.JCheckBox();
         jCheckBox13 = new javax.swing.JCheckBox();
         jButton1 = new javax.swing.JButton();
+        jbCerereDisponibilitate = new javax.swing.JButton();
+        jbCerereInregistrare = new javax.swing.JButton();
+        jbAnexa1 = new javax.swing.JButton();
+        jCheckBox14 = new javax.swing.JCheckBox();
+        jbDeclaratie = new javax.swing.JButton();
+        jbAnexa2 = new javax.swing.JButton();
+        jbConstitutiv = new javax.swing.JButton();
+        jbDeclaratieBeneficiar = new javax.swing.JButton();
 
         setTitle("Acte necesare infintarii firmei");
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -140,76 +139,164 @@ public class jfActeNecesare extends javax.swing.JFrame {
             }
         });
 
+        jbCerereDisponibilitate.setText("Descarca document");
+        jbCerereDisponibilitate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbCerereDisponibilitateActionPerformed(evt);
+            }
+        });
+
+        jbCerereInregistrare.setText("Descarca document");
+        jbCerereInregistrare.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbCerereInregistrareActionPerformed(evt);
+            }
+        });
+
+        jbAnexa1.setText("Descarca document");
+        jbAnexa1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbAnexa1ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jCheckBox14.setText("Anexa 2 privind investitia straina (daca este cazul)");
+        jCheckBox14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox14ActionPerformed(evt);
+            }
+        });
+
+        jbDeclaratie.setText("Descarca document");
+        jbDeclaratie.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbDeclaratieActionPerformed(evt);
+            }
+        });
+
+        jbAnexa2.setText("Descarca document");
+        jbAnexa2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbAnexa2ActionPerformed(evt);
+            }
+        });
+
+        jbConstitutiv.setText("Descarca document");
+        jbConstitutiv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbConstitutivActionPerformed(evt);
+            }
+        });
+
+        jbDeclaratieBeneficiar.setText("Descarca document");
+        jbDeclaratieBeneficiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbDeclaratieBeneficiarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(564, 564, 564)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(41, 41, 41)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jbCerereDisponibilitate)
+                            .addComponent(jbDeclaratieBeneficiar)
+                            .addComponent(jbConstitutiv)
+                            .addComponent(jCheckBox7)
+                            .addComponent(jbDeclaratie)
+                            .addComponent(jbAnexa2)
+                            .addComponent(jCheckBox4))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jCheckBox2)
                             .addComponent(jCheckBox1)
+                            .addComponent(jCheckBox12)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel3)
-                            .addComponent(jCheckBox2)
-                            .addComponent(jCheckBox3)
-                            .addComponent(jCheckBox4)
-                            .addComponent(jCheckBox5)
-                            .addComponent(jCheckBox6)
-                            .addComponent(jCheckBox7)
-                            .addComponent(jCheckBox8)
-                            .addComponent(jCheckBox9)
-                            .addComponent(jCheckBox10)
-                            .addComponent(jCheckBox11)
-                            .addComponent(jCheckBox13)
-                            .addComponent(jCheckBox12)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(304, 304, 304)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(304, 304, 304)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(27, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jbAnexa1)
+                                    .addComponent(jCheckBox3)
+                                    .addComponent(jCheckBox14)
+                                    .addComponent(jbCerereInregistrare))
+                                .addGap(300, 300, 300)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jCheckBox8)
+                                    .addComponent(jCheckBox6)
+                                    .addComponent(jCheckBox9)
+                                    .addComponent(jCheckBox10)
+                                    .addComponent(jCheckBox13)
+                                    .addComponent(jCheckBox11)
+                                    .addComponent(jCheckBox5))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
+                .addGap(41, 41, 41)
                 .addComponent(jLabel1)
-                .addGap(28, 28, 28)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBox1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(2, 2, 2)
+                .addComponent(jbCerereDisponibilitate)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCheckBox2)
+                    .addComponent(jCheckBox5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox2)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jbCerereInregistrare)
+                    .addComponent(jCheckBox6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCheckBox3)
+                    .addComponent(jCheckBox8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCheckBox9)
+                    .addComponent(jbAnexa1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCheckBox14)
+                    .addComponent(jCheckBox10))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jbAnexa2)
+                    .addComponent(jCheckBox13))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCheckBox4)
+                    .addComponent(jCheckBox11))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jbDeclaratie)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBox7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox11)
+                .addComponent(jbConstitutiv)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBox12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox13)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jbDeclaratieBeneficiar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addGap(18, 18, 18))
         );
 
         pack();
@@ -243,6 +330,66 @@ public class jfActeNecesare extends javax.swing.JFrame {
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
     }//GEN-LAST:event_formWindowOpened
+
+    private void jbCerereDisponibilitateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCerereDisponibilitateActionPerformed
+        // TODO add your handling code here:
+        String link = "https://www.onrc.ro/templates/site/formulare/11-10-182.pdf";
+        File out = new File("D:\\JAVA\\IdeaProjects\\space-hack\\descarcari\\Cerere_disponibilitate.pdf");
+        
+        new Thread(new download.Download(link, out)).start();
+    }//GEN-LAST:event_jbCerereDisponibilitateActionPerformed
+
+    private void jbCerereInregistrareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCerereInregistrareActionPerformed
+        // TODO add your handling code here:
+        String link = "https://www.onrc.ro/templates/site/formulare/11-10-150.pdf";
+        File out = new File("D:\\JAVA\\IdeaProjects\\space-hack\\descarcari\\Cerere_de_inregistrare.pdf");
+        
+        new Thread(new download.Download(link, out)).start();
+    }//GEN-LAST:event_jbCerereInregistrareActionPerformed
+
+    private void jbAnexa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbAnexa1ActionPerformed
+        // TODO add your handling code here:
+        String link = "https://www.onrc.ro/templates/site/formulare/anexa_1_inregistrare_fiscala.pdf";
+        File out = new File("D:\\JAVA\\IdeaProjects\\space-hack\\descarcari\\Anexa_1.pdf");
+        
+        new Thread(new download.Download(link, out)).start();
+    }//GEN-LAST:event_jbAnexa1ActionPerformed
+
+    private void jCheckBox14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox14ActionPerformed
+
+    private void jbDeclaratieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbDeclaratieActionPerformed
+        // TODO add your handling code here:
+        String link = "https://www.onrc.ro/templates/site/formulare/11-10-141.pdf";
+        File out = new File("D:\\JAVA\\IdeaProjects\\space-hack\\descarcari\\Declaratie.pdf");
+        
+        new Thread(new download.Download(link, out)).start();
+    }//GEN-LAST:event_jbDeclaratieActionPerformed
+
+    private void jbAnexa2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbAnexa2ActionPerformed
+        // TODO add your handling code here:
+        String link = "https://www.onrc.ro/templates/site/formulare/anexa_2_investitie_straina.pdf";
+        File out = new File("D:\\JAVA\\IdeaProjects\\space-hack\\descarcari\\Anexa_2.pdf");
+        
+        new Thread(new download.Download(link, out)).start();
+    }//GEN-LAST:event_jbAnexa2ActionPerformed
+
+    private void jbConstitutivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbConstitutivActionPerformed
+        // TODO add your handling code here:
+        String link = "https://www.onrc.ro/documente/acte_constitutive/model%20AC%20SRL%20AS.%20UNIC%20MODIFICAT.doc";
+        File out = new File("D:\\JAVA\\IdeaProjects\\space-hack\\descarcari\\Actul_constitutiv.pdf");
+        
+        new Thread(new download.Download(link, out)).start();
+    }//GEN-LAST:event_jbConstitutivActionPerformed
+
+    private void jbDeclaratieBeneficiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbDeclaratieBeneficiarActionPerformed
+        // TODO add your handling code here:
+        String link = "https://www.onrc.ro/templates/site/formulare/declaratie%20beneficiar%20real.pdf";
+        File out = new File("D:\\JAVA\\IdeaProjects\\space-hack\\descarcari\\Declaratie_privind_beneficiarii_reali.pdf");
+        
+        new Thread(new download.Download(link, out)).start();
+    }//GEN-LAST:event_jbDeclaratieBeneficiarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -278,8 +425,6 @@ public class jfActeNecesare extends javax.swing.JFrame {
             }
         });
     }
-
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JCheckBox jCheckBox1;
@@ -287,6 +432,7 @@ public class jfActeNecesare extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox11;
     private javax.swing.JCheckBox jCheckBox12;
     private javax.swing.JCheckBox jCheckBox13;
+    private javax.swing.JCheckBox jCheckBox14;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
     private javax.swing.JCheckBox jCheckBox4;
@@ -298,5 +444,12 @@ public class jfActeNecesare extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton jbAnexa1;
+    private javax.swing.JButton jbAnexa2;
+    private javax.swing.JButton jbCerereDisponibilitate;
+    private javax.swing.JButton jbCerereInregistrare;
+    private javax.swing.JButton jbConstitutiv;
+    private javax.swing.JButton jbDeclaratie;
+    private javax.swing.JButton jbDeclaratieBeneficiar;
     // End of variables declaration//GEN-END:variables
 }
