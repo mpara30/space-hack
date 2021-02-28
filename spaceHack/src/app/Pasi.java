@@ -60,6 +60,9 @@ public class Pasi extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Primii Pasi");
+        setLocation(new java.awt.Point(600, 400));
+        setResizable(false);
 
         jLabel7.setText("Pasul 1: Alcatuirea dosarului firmei");
 

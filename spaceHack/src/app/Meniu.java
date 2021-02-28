@@ -25,6 +25,8 @@ public class Meniu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Meniul principal");
+        setLocation(new java.awt.Point(600, 400));
+        setResizable(false);
 
         jLabel1.setText("MENIU");
 

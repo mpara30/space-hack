@@ -55,6 +55,8 @@ public class jfActeNecesare extends javax.swing.JFrame {
         jbDeclaratieBeneficiar = new javax.swing.JButton();
 
         setTitle("Acte necesare infintarii firmei");
+        setLocation(new java.awt.Point(400, 400));
+        setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 formWindowClosing(evt);
@@ -265,8 +267,8 @@ public class jfActeNecesare extends javax.swing.JFrame {
                     .addComponent(jbCerereInregistrare)
                     .addComponent(jCheckBox6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jCheckBox3, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jCheckBox8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
