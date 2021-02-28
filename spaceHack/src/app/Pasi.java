@@ -1,5 +1,7 @@
 package app;
 
+import javax.swing.JOptionPane;
+
 
 
 /* @author Iulian */
@@ -136,6 +138,7 @@ public class Pasi extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton3.setText("Inapoi");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,7 +172,7 @@ public class Pasi extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addGap(13, 13, 13)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 164, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE)
                 .addGap(13, 13, 13)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2)
@@ -568,6 +571,7 @@ public class Pasi extends javax.swing.JFrame {
 
     private void jIesireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jIesireActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Felicitari, ati parcurs cu succes primii pasi!");
         dispose();
     }//GEN-LAST:event_jIesireActionPerformed
 
