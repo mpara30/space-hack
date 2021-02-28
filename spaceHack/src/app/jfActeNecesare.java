@@ -5,7 +5,6 @@
  */
 package app;
 
-import download.Download;
 import java.io.File;
 
 
@@ -55,7 +54,7 @@ public class jfActeNecesare extends javax.swing.JFrame {
         jbDeclaratieBeneficiar = new javax.swing.JButton();
 
         setTitle("Acte necesare infintarii firmei");
-        setLocation(new java.awt.Point(400, 400));
+        setLocation(new java.awt.Point(300, 300));
         setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {

@@ -1,7 +1,6 @@
 package app;
 
 import data.Contact;
-import database.dbConnect;
 import javax.swing.JOptionPane;
 
 /* @author param */
@@ -37,30 +36,45 @@ public class Login extends javax.swing.JFrame {
         setLocation(new java.awt.Point(600, 400));
         setResizable(false);
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("INREGISTRARE");
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Nume:");
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("Prenume:");
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("CNP:");
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Nr. Telefon:");
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("E-Mail:");
 
+        txtNume.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtNume.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNumeActionPerformed(evt);
             }
         });
 
+        txtPrenume.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtPrenume.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPrenumeActionPerformed(evt);
             }
         });
 
+        txtCNP.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        txtTelefon.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        txtEmail.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        btAcceptare.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btAcceptare.setText("Acceptare");
         btAcceptare.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,6 +82,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+        btAnulare.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btAnulare.setText("Anulare");
         btAnulare.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,7 +118,7 @@ public class Login extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(53, 53, 53)
                 .addComponent(btAcceptare)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 109, Short.MAX_VALUE)
                 .addComponent(btAnulare)
                 .addGap(54, 54, 54))
         );
@@ -136,7 +151,7 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btAnulare)
                     .addComponent(btAcceptare))
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
         pack();

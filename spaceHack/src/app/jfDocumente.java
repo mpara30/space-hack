@@ -89,6 +89,7 @@ public class jfDocumente extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("Nume:");
 
+        jbIncarcare.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jbIncarcare.setText("Incarca acum");
         jbIncarcare.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,6 +103,7 @@ public class jfDocumente extends javax.swing.JFrame {
         lblFile.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblFile.setText("Niciun fisier selectat");
 
+        jbSalvare.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jbSalvare.setText("Salvare");
         jbSalvare.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,6 +111,7 @@ public class jfDocumente extends javax.swing.JFrame {
             }
         });
 
+        jbIesire.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jbIesire.setText("Iesire");
         jbIesire.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

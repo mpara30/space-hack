@@ -1,7 +1,5 @@
 package app;
 
-import java.awt.CardLayout;
-import javax.swing.JPanel;
 
 /* @author Iulian */
 public class Meniu extends javax.swing.JFrame {
@@ -28,8 +26,10 @@ public class Meniu extends javax.swing.JFrame {
         setLocation(new java.awt.Point(600, 400));
         setResizable(false);
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("MENIU");
 
+        btPasi.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btPasi.setText("Primii Pasi");
         btPasi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -37,6 +37,7 @@ public class Meniu extends javax.swing.JFrame {
             }
         });
 
+        jbEvidenta.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jbEvidenta.setText("Evidenta Acte");
         jbEvidenta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -44,6 +45,7 @@ public class Meniu extends javax.swing.JFrame {
             }
         });
 
+        btBanci.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btBanci.setText("Oferte Banci");
         btBanci.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -51,19 +53,24 @@ public class Meniu extends javax.swing.JFrame {
             }
         });
 
+        lbMesaj.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(80, Short.MAX_VALUE)
+                .addContainerGap(94, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(btPasi, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jbEvidenta)
-                    .addComponent(btBanci, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbMesaj, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btPasi, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jbEvidenta, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btBanci, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addContainerGap(94, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbMesaj, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -78,7 +85,7 @@ public class Meniu extends javax.swing.JFrame {
                 .addComponent(jbEvidenta)
                 .addGap(18, 18, 18)
                 .addComponent(btBanci)
-                .addContainerGap(109, Short.MAX_VALUE))
+                .addContainerGap(103, Short.MAX_VALUE))
         );
 
         pack();

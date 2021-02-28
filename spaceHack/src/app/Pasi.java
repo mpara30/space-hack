@@ -64,6 +64,7 @@ public class Pasi extends javax.swing.JFrame {
         setLocation(new java.awt.Point(600, 400));
         setResizable(false);
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setText("Pasul 1: Alcatuirea dosarului firmei");
 
         cbPas1.addActionListener(new java.awt.event.ActionListener() {
@@ -90,7 +91,7 @@ public class Pasi extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(70, 70, 70)
                         .addComponent(jLabel7)
-                        .addGap(0, 254, Short.MAX_VALUE))
+                        .addGap(0, 212, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane7)))
@@ -102,7 +103,7 @@ public class Pasi extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
                 .addGap(7, 7, 7)
                 .addComponent(cbPas1)
                 .addContainerGap())
@@ -110,6 +111,7 @@ public class Pasi extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Pasul 1", jPanel1);
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("Pasul 2: Rezervarea numelui firmei");
 
         cbPas2.addActionListener(new java.awt.event.ActionListener() {
@@ -148,7 +150,7 @@ public class Pasi extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(cbPas2)
                 .addContainerGap())
@@ -156,6 +158,7 @@ public class Pasi extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Pasul 2", jPanel2);
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Pasul 3: Stabilirea sediului social");
 
         cbPas3.addActionListener(new java.awt.event.ActionListener() {
@@ -182,7 +185,7 @@ public class Pasi extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(70, 70, 70)
                         .addComponent(jLabel2)
-                        .addGap(0, 266, Short.MAX_VALUE))
+                        .addGap(0, 228, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane2)))
@@ -194,7 +197,7 @@ public class Pasi extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(cbPas3)
                 .addContainerGap())
@@ -202,6 +205,7 @@ public class Pasi extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Pasul 3", jPanel3);
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("Pasul 4: Capitalul Social");
 
         cbPas4.addActionListener(new java.awt.event.ActionListener() {
@@ -228,7 +232,7 @@ public class Pasi extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(70, 70, 70)
                         .addComponent(jLabel3)
-                        .addGap(0, 306, Short.MAX_VALUE))
+                        .addGap(0, 276, Short.MAX_VALUE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane3)))
@@ -240,7 +244,7 @@ public class Pasi extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(cbPas4)
                 .addContainerGap())
@@ -248,6 +252,7 @@ public class Pasi extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Pasul 4", jPanel4);
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Pasul 5: Taxa de inregistrare");
 
         cbPas5.addActionListener(new java.awt.event.ActionListener() {
@@ -274,7 +279,7 @@ public class Pasi extends javax.swing.JFrame {
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGap(70, 70, 70)
                         .addComponent(jLabel4)
-                        .addGap(0, 280, Short.MAX_VALUE))
+                        .addGap(0, 244, Short.MAX_VALUE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane4)))
@@ -286,7 +291,7 @@ public class Pasi extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(cbPas5)
                 .addContainerGap())
@@ -294,6 +299,7 @@ public class Pasi extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Pasul 5", jPanel5);
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Pasul 6: Realizare stampila");
 
         cbPas6.addActionListener(new java.awt.event.ActionListener() {
@@ -320,7 +326,7 @@ public class Pasi extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(70, 70, 70)
                         .addComponent(jLabel5)
-                        .addGap(0, 291, Short.MAX_VALUE))
+                        .addGap(0, 259, Short.MAX_VALUE))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane5)))
@@ -332,7 +338,7 @@ public class Pasi extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(cbPas6)
                 .addContainerGap())
@@ -340,6 +346,7 @@ public class Pasi extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Pasul 6", jPanel6);
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("Pasul 7: Deschidere cont curent");
 
         cbPas7.addActionListener(new java.awt.event.ActionListener() {
@@ -366,7 +373,7 @@ public class Pasi extends javax.swing.JFrame {
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGap(70, 70, 70)
                         .addComponent(jLabel6)
-                        .addGap(0, 266, Short.MAX_VALUE))
+                        .addGap(0, 221, Short.MAX_VALUE))
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane6)))
@@ -378,7 +385,7 @@ public class Pasi extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(cbPas7)
                 .addContainerGap())
@@ -386,6 +393,7 @@ public class Pasi extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Pasul 7", jPanel7);
 
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("Pasul 8: Modele de facturi si chitante");
 
         cbPas8.addActionListener(new java.awt.event.ActionListener() {
@@ -412,7 +420,7 @@ public class Pasi extends javax.swing.JFrame {
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGap(70, 70, 70)
                         .addComponent(jLabel9)
-                        .addGap(0, 242, Short.MAX_VALUE))
+                        .addGap(0, 196, Short.MAX_VALUE))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane8)))
@@ -424,7 +432,7 @@ public class Pasi extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(cbPas8)
                 .addContainerGap())
